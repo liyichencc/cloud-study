@@ -1,8 +1,8 @@
 package com.cloud.study.controller;
 
-import com.cloud.study.entities.Payment;
 import com.cloud.study.service.PaymentService;
-import com.cloud.study.vo.CommonResult;
+import entities.CommonResult;
+import entities.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +15,7 @@ public class PaymentController {
     private PaymentService paymentService;
 
     @PostMapping("/payment/insert")
-    public CommonResult insert(@RequestBody  Payment payment) {
+    public CommonResult insert(@RequestBody Payment payment) {
         int status = paymentService.save(payment);
         log.info("-----插入结果----" + status);
         if (status > 0) {

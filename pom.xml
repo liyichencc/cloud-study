@@ -10,6 +10,7 @@
     <modules>
         <module>cloud-privider-payment-8001</module>
         <module>cloud-comsumer-order-80</module>
+        <module>cloud-api-common</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -51,5 +51,11 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-test</artifactId>
     </dependency>
+
+    <dependency>
+        <groupId>com.cloud.study</groupId>
+        <artifactId>cloud-api-common</artifactId>
+        <version>${project.version}</version>
+    </dependency>
 </dependencies>
 </project>

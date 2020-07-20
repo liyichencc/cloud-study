@@ -1,4 +1,4 @@
-package com.cloud.study.vo;
+package entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,7 +15,7 @@ public class CommonResult<T> {
 
     private T data;
 
-    public CommonResult (Integer code,String msg) {
+    public CommonResult(Integer code, String msg) {
         this(code,msg,null);
     }
 

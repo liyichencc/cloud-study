@@ -1,6 +1,6 @@
 package com.cloud.study.dao;
 
-import com.cloud.study.entities.Payment;
+import entities.Payment;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
