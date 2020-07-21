@@ -1,4 +1,4 @@
-package entities;
+package com.cloud.study.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

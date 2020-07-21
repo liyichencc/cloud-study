@@ -7,5 +7,5 @@ public interface PaymentService {
 
     int save(Payment payment);
 
-    Payment getPaymentById( @Param("id") Long id);
+    Payment getPaymentById(@Param("id") Long id);
 }
