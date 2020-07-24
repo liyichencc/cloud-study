@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/*
+    这段注释只在test上独有
+ */
 @RestController
 @Slf4j
 public class PaymentController {
