@@ -12,7 +12,10 @@ spring:
       port: 8500
       discovery:
         service-name: ${spring.application.name}
-ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 60000
+#ribbon:
+#  ReadTimeout: 60000
+#  ConnectTimeout: 60000
 
+feign:
+  hystrix:
+    enabled: true

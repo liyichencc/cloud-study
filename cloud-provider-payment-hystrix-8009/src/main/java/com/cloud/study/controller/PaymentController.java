@@ -71,10 +71,10 @@ public class PaymentController {
 
     @GetMapping("payment/hystrix/timeout/{id}")
     @HystrixCommand(fallbackMethod="timeOUtServcie_handler",commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "1000")
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "5000")
     })
     public String timeOUtServcie(@PathVariable("id")Long id ) {
-        int a = 10/0;
+//        int a = 10/0;
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
@@ -85,5 +85,13 @@ public class PaymentController {
 
     public String timeOUtServcie_handler(@PathVariable("id")Long id ) {
         return "兜底方案,o(╥﹏╥)o";
+    }
+
+    // 服务熔断
+    @GetMapping("/payment/circuit/{id}")
+    public String paymentCircuitBreaker(@PathVariable("id") Integer id) {
+        String result = paymentService.paymentCircuitBreaker(id);
+        log.info("****result: " + result);
+        return result;
     }
 }
