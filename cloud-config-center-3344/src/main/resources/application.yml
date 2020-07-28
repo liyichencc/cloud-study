@@ -16,3 +16,6 @@ spring:
           search-paths:
             - spring-cloud-config
       label: master
+
+
+
