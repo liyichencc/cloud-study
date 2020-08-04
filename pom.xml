@@ -25,6 +25,10 @@
         <module>cloud-config-center-3366</module>
         <module>cloud-stream-rabbitmq-provider-8801</module>
         <module>cloud-comsumer-stream-rabbitmq-8802</module>
+        <module>cloud-stream-rabbitmq-comsumer-8802</module>
+        <module>cloud-stream-rabbitmq-comsumer-8803</module>
+        <module>cloud-alibaba-nacos-provider-9001</module>
+        <module>cloud-alibaba-nacos-comsumer-9003</module>
 
     </modules>
     <packaging>pom</packaging>

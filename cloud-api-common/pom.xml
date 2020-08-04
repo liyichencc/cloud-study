@@ -11,9 +11,6 @@
 
     <artifactId>cloud-api-common</artifactId>
     <packaging>pom</packaging>
-    <modules>
-        <module>cloud-stream-rabbitmq-provider-8801</module>
-    </modules>
 
     <dependencies>
 
