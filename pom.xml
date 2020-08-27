@@ -29,6 +29,9 @@
         <module>cloud-stream-rabbitmq-comsumer-8803</module>
         <module>cloud-alibaba-nacos-provider-9001</module>
         <module>cloud-alibaba-nacos-comsumer-9003</module>
+        <module>cloud-sentinel-client-8401</module>
+        <module>cloud-alibaba-provider-8004</module>
+        <module>cloud-alibaba-comsumer-8105</module>
 
     </modules>
     <packaging>pom</packaging>
