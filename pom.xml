@@ -32,6 +32,7 @@
         <module>cloud-sentinel-client-8401</module>
         <module>cloud-alibaba-provider-8004</module>
         <module>cloud-alibaba-comsumer-8105</module>
+        <module>cloud-seata-order-2001</module>
 
     </modules>
     <packaging>pom</packaging>
